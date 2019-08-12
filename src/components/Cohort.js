@@ -1,7 +1,7 @@
-import React from 'react';
-import Person from './Person';
-import './Cohort.css';
+// import React from 'react';
+// import Person from './Person';
+// import './Cohort.css';
 
-// COHORT COMPONENT CODE GOES HERE
+// // COHORT COMPONENT CODE GOES HERE
 
-export default Cohort;
+// export default Cohort;
