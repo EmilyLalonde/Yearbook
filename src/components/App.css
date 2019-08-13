@@ -4,9 +4,6 @@ html {
 }
 
 body {
-  background: url('https://ak9.picdn.net/shutterstock/videos/1007204479/thumb/1.jpg');
-  background-size: cover;
-  background-attachment: fixed;
   position: absolute;
   top: 0;
   bottom: 0;
