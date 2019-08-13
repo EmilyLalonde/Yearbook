@@ -4,23 +4,19 @@ import './Cohort.css';
 
 const Cohort = (props) => {
   console.log(props)
+  
+const staff = props.instructors.map((person) => {
+          return <Person key={person.id} name={person.name} quote={person.quote} superlative={person.superlative} photo={person.photo}/>
+        })
+
+ const students = props.students.map((person) => {
+          console.log(person)
+          return <Person key={person.id} name={person.name} quote={person.quote} superlative={person.superlative} photo={person.photo}/>
+        })
   return (
     <div>
-    <section className="top"> 
-      {
-        props.instructors.map((instructor) => {
-          return <Person key={instructor.id} instructor={instructor}/>
-        })
-      }
-    </section>
-    {/* <section className="bottom">
-      {
-        props.students.map((student) => {
-          console.log(student)
-          return <Person key={student.id} student={student}/>
-        })
-      }
-    </section> */}
+    <section className="staffList">{staff}</section>
+    <section className="studentList">{students}</section>
     </div>
   )
 }
