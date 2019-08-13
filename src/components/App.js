@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Cohort from './Cohort';
 import people from '../data/yearbook-data.js';
 import './App.css';
+import AddStudentForm from '../AddStudentForm';
 
 class App extends Component {
   constructor() {
@@ -16,6 +17,7 @@ class App extends Component {
     return (
       <div className="App">
       <h1>Turing Yearbook</h1>
+        <AddStudentForm />
         <Cohort instructors={this.state.staff} students={this.state.students}/>
       </div>
     );
