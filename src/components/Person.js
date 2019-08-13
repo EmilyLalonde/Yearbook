@@ -1,16 +1,15 @@
 import React from 'react';
 import './Person.css';
 
-const Person = ({instructor, student}) => {
-  // console.log('instructor', instructor)
-  // console.log('student',student)
+const Person = ({name, quote, superlative, photo}) => {
+  console.log('person', name)
   return (
     <div>
       <section className="teachers">
-      {/* <img>{instructor.photo}</img> */}
-      <h3>{instructor.name}</h3>
-      <p>{instructor.quote}</p>
-      <h4>{instructor.superlative}</h4>
+      <img src={photo} alt="staff-photos"/>
+      <h3>{name}</h3>
+      <p>{quote}</p>
+      <h4>{superlative}</h4>
       </section>
       {/* <section className="students">
         <h3>{student.name}</h3>
