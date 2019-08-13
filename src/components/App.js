@@ -11,13 +11,20 @@ class App extends Component {
       staff: people.staff,
       students: people.students
     }
+    this.addStudent = this.addStudent.bind(this);
+  }
+
+  addStudent(newStudent) {
+    this.setState({
+      students: [...this.state.students, newStudent]
+    })
   }
 
   render() {
     return (
       <div className="App">
       <h1>Turing Yearbook</h1>
-        <AddStudentForm />
+        <AddStudentForm addStudent={this.addStudent}/>
         <Cohort instructors={this.state.staff} students={this.state.students}/>
       </div>
     );
