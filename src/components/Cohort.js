@@ -12,8 +12,14 @@ const staff = props.instructors.map((instructor) => {
         })
   return (
     <div>
-    <section className="staffList">{staff}</section>
-    <section className="studentList">{students}</section>
+      <article className="staff-info">
+    <h2 className="staff-header">Staff</h2>
+    <section className="staff-list">{staff}</section>
+    </article>
+    <article className="student-info">
+    <h2 className="student-header">Students</h2>
+    <section className="student-list">{students}</section>
+    </article>
     </div>  
   )
 }

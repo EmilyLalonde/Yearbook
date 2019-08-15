@@ -1,4 +1,22 @@
 img {
-  height: 200px;
+  height: 270px;
+  margin-top: 20px;
   width: 300px;
+}
+
+.people {
+  border: 1px solid black;
+  display: inline-block;
+  height: 450px;
+  margin: 0 20px 30px 20px;
+  width: 400px;
+} 
+
+p {
+  height: 40px;
+}
+
+h3, 
+h4 {
+  margin: 0;
 }
