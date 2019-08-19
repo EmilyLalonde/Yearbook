@@ -35,8 +35,8 @@ class App extends Component {
     return (
       <div className="App">
       <h1>Turing Yearbook</h1>
-        <AddStudentForm addStudent={this.addStudent}/>
         <Cohort instructors={this.state.staff} students={this.state.students} deleteCard={this.deleteCard}/>
+        <AddStudentForm addStudent={this.addStudent}/>
       </div>
     );
   }
