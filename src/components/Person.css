@@ -1,13 +1,16 @@
 img {
+  border: 3px solid #86c5da;
+  border-radius: 6px;
   height: 270px;
   margin-top: 20px;
   width: 300px;
 }
 
 .people {
-  border: 1px solid black;
+  border: 3px solid #86c5da;
+  border-radius: 6px;
   display: inline-block;
-  height: 450px;
+  height: 460px;
   margin: 0 20px 30px 20px;
   width: 400px;
 } 
@@ -19,4 +22,14 @@ p {
 h3, 
 h4 {
   margin: 0;
+}
+
+button {
+  background-color: #86c5da;
+  border-radius: 5px;
+  color: white;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 80px;
 }
